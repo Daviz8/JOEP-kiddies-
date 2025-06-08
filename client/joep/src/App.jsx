@@ -59,12 +59,12 @@ function App() {
       </section>
 
       {/* Popular Products */}
-      <section className="p-6 bg-blue-50">
+      <section className="p-6 bg-blue-50 ">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-2xl font-semibold text-pink-700 Mont animate-pulse">SHOP NOW</h2>
-          <button className="text-sm text-purple-500 Mont">View All →</button>
+          <button className="text-sm text-purple-500 Mont font-bold">View All →</button>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-40">
           {[1, 2, 3, 4 ].map((item) => (
             <div key={item} className="rounded-lg overflow-hidden shadow-md bg-white border border-pink-100">
               <img src={`/images/${item}.jpg`} alt={`Product ${item}`} className="object-cover w-full h-40" />
@@ -75,8 +75,8 @@ function App() {
 
 
       {/* Follow Us Section */}
-      <section className="p-6 text-center bg-pink-50">
-        <h3 className="text-2xl font-bold text-purple-700 mb-4 Mont "> <em> Follow Us on Social Media </em> </h3>
+      <section className="p-6 text-center bg-pink-50 ">
+        <h3 className="text-xl font-bold text-purple-700 mb-4 Mont "> <em> <span className='text-teal-500 animate-pulse'> Follow Us </span> on Social Media </em> </h3>
         <div className="flex justify-center space-x-6 text-2xl text-pink-600">
         <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600">     <img src='images/facebook.png' className='sm:w-10 sm:h-10  w-12 h-12' /> </a>
              <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600">     <img src='images/instagram.png' className='sm:w-10 sm:h-10 w-12 h-12'  /> </a>
@@ -87,7 +87,7 @@ function App() {
 
     
       {/* Footer */}
-      <footer className="bg-pink-100 text-center py-6 mt-10">
+      <footer className="bg-pink-100 text-center py-6">
         <p className="text-sm text-gray-600 Mont font-bold">&copy; 2025 JOEP KIDDIES GLOW. All rights reserved.</p>
       </footer>
     </div>
